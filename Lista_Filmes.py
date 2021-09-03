@@ -1,7 +1,7 @@
 from Modules.functions import *
 
-# arquivo_csv = 'DB/ListaFilmes.csv'
-arquivo_csv = 'Tests/teste2.csv'
+arquivo_csv = 'DB/ListaFilmes.csv'
+# arquivo_csv = 'Tests/teste2.csv'
 opcao = menu()
 
 while True:
