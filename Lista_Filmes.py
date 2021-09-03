@@ -1,7 +1,7 @@
-from Functions.modulo_funcoes_v2 import *
+from Modules.functions import *
 
-arquivo_csv = 'ListaFilmes.csv'
-#arquivo_csv = 'teste.csv'
+# arquivo_csv = 'DB/ListaFilmes.csv'
+arquivo_csv = 'Tests/teste2.csv'
 opcao = menu()
 
 while True:
@@ -10,10 +10,10 @@ while True:
 		print(registrar(arquivo_csv))
 	elif opcao == 2:
 		print('Lista de filmes (ordenada por nome)\n')
-		exibir(arquivo_csv, False)	#Ordena por nome
+		exibir(arquivo_csv, False)		# Ordena por nome
 	elif opcao == 3:
 		print('Lista de filmes (ordenada por ano)\n')
-		exibir(arquivo_csv, True)	#Ordena por ano
+		exibir(arquivo_csv, True)		# Ordena por ano
 	elif opcao == 4:
 		print('Pesquisar filme\n')
 		buscar(arquivo_csv)
@@ -21,5 +21,5 @@ while True:
 		print('Excluir filme\n')
 		print(excluir(arquivo_csv))
 	else:
-		print(' Opção inválida!\n')
+		print('Opção inválida!\n')
 	opcao = menu()
